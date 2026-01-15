@@ -1,4 +1,4 @@
-# TypstTemplate
+# TypstTemplateGubkinUni
 
 **A template for writing laboratory work reports in Typst**
 
