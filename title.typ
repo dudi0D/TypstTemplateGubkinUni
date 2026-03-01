@@ -3,7 +3,7 @@
 #let lab_topic = "Управление пользователями и правами доступа в ОС Linux"
 #let student_group = "АС-24-05"
 #let student_name = "Иванов Иван Иванович"
-#let teacher_name = "Соколов Пётр Петрович"
+#let teacher_name = "ст. пр. кафедры Кафедра Соколов Пётр Петрович"
 #set page(
   paper: "a4",
   margin: (
@@ -34,19 +34,16 @@
 #lab_topic
 
 #set align(left)
-#v(8em)#h(20em)
-*Группа:* #student_group
+#v(4em)
+#pad(left: 70%)[
+  #set par(first-line-indent: 0pt)
+  *Группа:* #student_group
 
-#h(20em)
-*Студент:*
+  *Выполнил:* #student_name
 
-#h(20em)
-#student_name
+  *Преподаватель:* #teacher_name
+]
 
-#h(20em)
-*Преподаватель:*
-
-#h(20em)#teacher_name
 #set align(center + bottom)
 Москва 2026 г.
 #pagebreak()
