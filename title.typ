@@ -39,9 +39,9 @@
   #set par(first-line-indent: 0pt)
   *Группа:* #student_group
 
-  *Выполнил:* #student_name
+  *Выполнил:* \ #student_name
 
-  *Преподаватель:* #teacher_name
+  *Преподаватель:*  \ #teacher_name
 ]
 
 #set align(center + bottom)

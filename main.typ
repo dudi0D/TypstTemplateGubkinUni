@@ -16,6 +16,9 @@
 )
 #set text(font: "Times New Roman", size: 14pt, lang: "ru") // font settings
 #include("title.typ") // include title page
+#show figure.where(
+  kind: table
+): set figure.caption(position: top)
 = Задание лабораторной работы
 Определить текущих пользователей системы и их права доступа. Создать новых пользователей с различными правами доступа. Проверить права доступа созданных пользователей.
 = Ход работы
