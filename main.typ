@@ -6,7 +6,7 @@
   left: 2cm,
   right: 1cm,
 )) // page settings
-#show heading: set align(center) // headers align
+#show heading.where(depth: 1): set align(center) // headers align
 #show figure: set align(center) // images align
 #set par( // paragraph settings
   first-line-indent: (
@@ -18,8 +18,19 @@
 #include("title.typ") // include title page
 #show figure.where(
   kind: table
-): set figure.caption(position: top)
-#set page(numbering: "1")
+): set figure.caption(position: top) // table caption settings
+#set page(numbering: "1") // page numbering settings
+#set image(width: 14cm) // image width settings
+#show raw.where(block: true): it => {
+  block(
+    fill: luma(240),
+    inset: 10pt,
+    radius: 4pt,
+    stroke: luma(200),
+    width: 100%,
+    it
+  )
+} // code block settings
 = Задание лабораторной работы
 Определить текущих пользователей системы и их права доступа. Создать новых пользователей с различными правами доступа. Проверить права доступа созданных пользователей.
 = Ход работы
